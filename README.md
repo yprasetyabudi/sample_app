@@ -1,3 +1,6 @@
+I can't stop to learn new programming, Ruby on Rails.
+It's third learning project
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
