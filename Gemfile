@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.12'
+gem 'bootstrap-sass', '2.1' 
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -9,6 +10,9 @@ gem 'rails', '3.2.12'
 group :development, :test do
   gem 'sqlite3', '1.3.5'
   gem 'rspec-rails', '2.11.0'
+  gem 'guard-rspec', '1.2.1'
+  gem 'guard-spork', '1.2.0'
+  gem 'spork', '0.9.2'
 end
 
 # Gems used only for assets and not required
@@ -40,9 +44,12 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 
+# Test gems on Linux
 group :test do
   gem 'capybara', '1.1.2'
-end
+  gem 'rb-inotify', '~> 0.9'
+  gem 'libnotify', '0.5.9'
+end 
 
 group :production do
   gem 'pg', '0.14.1'
